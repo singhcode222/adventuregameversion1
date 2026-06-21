@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>F1 Race Strategy Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="game.js"></script>
+</head>
+
+<body>
+
+<div class="engineer-box">
+    <h3>Race Engineer</h3>
+    <p class="radio-message">Prepare for formation lap.</p>
+</div>
+
+<div class="tire-display">
+    Selected Tire: <span class="current-tire">None</span>
+</div>
+
+<!-- tire choice -->
+<div class="pre-race-tires">
+
+    <div class="image-container">
+        <img src="StartingGridTop5.png" class="race-image">
+    </div>
+
+    <h1>Choose Starting Tire</h1>
+
+    <button class="start-soft">Soft</button>
+    <button class="start-medium">Medium</button>
+    <button class="start-hard">Hard</button>
+
+</div>
+
+<!-- races_tart -->
+<div class="story-opening">
+
+    <div class="image-container">
+        <img src="StartingGridTop5.png" class="race-image">
+    </div>
+
+    <h1>You Start P4 At Monza</h1>
+
+</div>
+
+<div class="buttons">
+    <button class="option-one">Aggressive Start</button>
+    <button class="option-two">Controlled Start</button>
+</div>
+
+<!-- overtaking -->
+<div class="overtake-fail">
+
+    <div class="image-container">
+        <img src="OvertakeFail.png" class="race-image">
+    </div>
+
+    <h1>❌ OVERTAKE FAILED</h1>
+
+    <button class="retry-overtake">Retry Next Lap</button>
+
+</div>
+
+<!-- aggro -->
+<div class="option-one-screen">
+
+    <div class="image-container">
+        <img src="AggressiveStart.png" class="race-image">
+    </div>
+
+    <h1>Attempting Aggressive Overtake...</h1>
+
+    <button class="one-overtake">Overtake</button>
+
+</div>
+
+<!-- control -->
+<div class="option-two-screen">
+
+    <div class="image-container">
+        <img src="ControlledStart.png" class="race-image">
+    </div>
+
+    <h1>Controlled Attempt...</h1>
+
+    <button class="two-overtake">Overtake</button>
+
+</div>
+
+<!-- pit -->
+<div class="pit-screen">
+
+    <div class="image-container">
+        <img src="SafetyCar.png" class="race-image">
+    </div>
+
+    <h1>Safety Car Pit Stop</h1>
+
+    <p>Choose New Tire Compound</p>
+
+    <button class="pit-soft">Soft</button>
+    <button class="pit-medium">Medium</button>
+    <button class="pit-hard">Hard</button>
+
+</div>
+
+<!-- final strat -->
+<div class="strategy-screen">
+
+    <div class="image-container">
+        <img src="FinalLaps.png" class="race-image">
+    </div>
+
+    <h1>Final Laps Strategy</h1>
+
+    <button class="attack-strategy">Attack</button>
+    <button class="balance-strategy">Balance</button>
+    <button class="defend-strategy">Defend</button>
+
+</div>
+
+
+<!-- endings / results -->
+
+<div class="hamilton-win">
+
+    <div class="image-container">
+        <img src="HamiltonWin.png" class="race-image">
+    </div>
+
+    <h1>Hamilton Wins 🏆</h1>
+
+</div>
+
+<div class="verstappen-win">
+
+    <div class="image-container">
+        <img src="VerstappenWin.png" class="race-image">
+    </div>
+
+    <h1>Verstappen Wins 🏆</h1>
+
+</div>
+
+<div class="antonelli-win">
+
+    <div class="image-container">
+        <img src="AntonelliWin.png" class="race-image">
+    </div>
+
+    <h1>Antonelli Wins 🏆</h1>
+
+</div>
+
+<div class="user-win">
+
+    <div class="image-container">
+        <img src="UserWin.png" class="race-image">
+    </div>
+
+    <h1>You Win 🏆</h1>
+
+</div>
+
+</body>
+</html>
