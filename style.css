@@ -1,7 +1,7 @@
 body {
     font-family: Helvetica;
     text-align: center;
-    background: white;
+    background: rgb(123, 123, 123);
     padding-top: 20px;
 }
 
@@ -28,8 +28,8 @@ button {
     top: 10px;
     right: 10px;
     width: 260px;
-    background: #eeeeee;
-    border: 2px solid black;
+    background: #e2e2e2;
+    border: 2px solid rgb(102, 91, 91);
     padding: 10px;
     font-size: 16px;
 }
