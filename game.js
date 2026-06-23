@@ -78,7 +78,7 @@ function attemptOvertake(successCallback) {
         return;
     }
 
-    if (Math.random() < 0.25) {
+    if (Math.random() < 0.45) {
         document.querySelector(".option-one-screen").style.display = "none";
         document.querySelector(".option-two-screen").style.display = "none";
         document.querySelector(".overtake-fail").style.display = "block";
