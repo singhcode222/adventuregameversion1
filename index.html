@@ -8,16 +8,37 @@
 
 <body>
 
-<div class="engineer-box">
-    <h3>Race Engineer</h3>
-    <p class="radio-message">Prepare for formation lap.</p>
+<div class="sidebar">
+
+    <div class="engineer-box">
+        <h3>Race Engineer</h3>
+        <p class="radio-message">Prepare for formation lap.</p>
+    </div>
+
+    <div class="track-box">
+        <h3>Monza Circuit</h3>
+
+        <!-- Replace this image later -->
+        <img src="MonzaTrack.png" class="track-image">
+
+        <p>Italian Grand Prix</p>
+    </div>
+
+</div>
+
+<div class="status-bar">
+    <span>Position: <span class="current-position">P4</span></span>
+    <span>Starting Tire: <span class="starting-tire-display">None</span></span>
+    <span>Pit Tire: <span class="pit-tire-display">None</span></span>
 </div>
 
 <div class="tire-display">
-    Selected Tire: <span class="current-tire">None</span>
+    Current Tire:
+    <span class="current-tire">None</span>
 </div>
 
-<!-- tire choice -->
+<!-- prerace -->
+
 <div class="pre-race-tires">
 
     <div class="image-container">
@@ -26,20 +47,25 @@
 
     <h1>Choose Starting Tire</h1>
 
+    <p>You must use at least TWO different tire compounds during the race.</p>
+
     <button class="start-soft">Soft</button>
     <button class="start-medium">Medium</button>
     <button class="start-hard">Hard</button>
 
 </div>
 
-<!-- races_tart -->
+<!-- start -->
+
 <div class="story-opening">
 
     <div class="image-container">
         <img src="StartingGridTop5.png" class="race-image">
     </div>
 
-    <h1>Welcome To the Italian Grand Prix! You are starting P4 At Monza 🇮🇹</h1>
+    <h1>Welcome To The Italian Grand Prix!</h1>
+
+    <p>You are starting P4 at Monza 🇮🇹</p>
 
 </div>
 
@@ -48,20 +74,24 @@
     <button class="option-two">Controlled Start (Slipstream)</button>
 </div>
 
-<!-- overtaking -->
+<!-- overtake fail -->
+
 <div class="overtake-fail">
 
     <div class="image-container">
         <img src="https://64.media.tumblr.com/bace9527a9df9d0f6d54a390510f34f1/tumblr_ntm7hr9HJ61s9l8tco4_540.gif" class="race-image">
     </div>
 
-    <h1>❌ OVERTAKE FAILED</h1>
+    <h1>❌ Overtake Failed</h1>
 
-    <button class="retry-overtake">Retry Next Lap</button>
+    <p class="attempt-message"></p>
+
+    <button class="retry-overtake">Try Again</button>
 
 </div>
 
 <!-- aggro -->
+
 <div class="option-one-screen">
 
     <div class="image-container">
@@ -75,19 +105,21 @@
 </div>
 
 <!-- control -->
+
 <div class="option-two-screen">
 
     <div class="image-container">
         <img src="https://64.media.tumblr.com/bace9527a9df9d0f6d54a390510f34f1/tumblr_ntm7hr9HJ61s9l8tco4_540.gif" class="race-image">
     </div>
 
-    <h1>Controlled Attempt...</h1>
+    <h1>Controlled Overtake Attempt...</h1>
 
     <button class="two-overtake">Overtake</button>
 
 </div>
 
-<!-- pit -->
+<!-- pits -->
+
 <div class="pit-screen">
 
     <div class="image-container">
@@ -95,8 +127,10 @@
     </div>
 
     <h1>Safety Car Pit Stop</h1>
-    <p>Lando Norris crashes, bringing out the safety car</p>
-    <p>Choose a New Tire Compound</p>
+
+    <p>Lando Norris crashes and brings out the Safety Car.</p>
+
+    <p>Select a new tire compound.</p>
 
     <button class="pit-soft">Soft</button>
     <button class="pit-medium">Medium</button>
@@ -104,7 +138,8 @@
 
 </div>
 
-<!-- final strat -->
+<!-- strat -->
+
 <div class="strategy-screen">
 
     <div class="image-container">
@@ -119,10 +154,19 @@
 
 </div>
 
+<!-- dsq -->
 
-<!-- endings / results -->
+<div class="dsq-screen">
 
-<div class="hamilton-win">
+    <h1>DISQUALIFIED</h1>
+
+    <p class="dsq-reason"></p>
+
+</div>
+
+<!-- ham -->
+
+<div class="hamilton-win winner-screen ferrari-theme">
 
     <div class="image-container">
         <img src="LewisWin.png" class="race-image">
@@ -130,9 +174,13 @@
 
     <h1>Lewis Hamilton Wins 🇬🇧 🏆</h1>
 
+    <p class="result-text"></p>
+
 </div>
 
-<div class="verstappen-win">
+<!-- ver -->
+
+<div class="verstappen-win winner-screen redbull-theme">
 
     <div class="image-container">
         <img src="MaxWin.png" class="race-image">
@@ -140,9 +188,13 @@
 
     <h1>Max Verstappen Wins 🇳🇱 🏆</h1>
 
+    <p class="result-text"></p>
+
 </div>
 
-<div class="antonelli-win">
+<!-- kimi -->
+
+<div class="antonelli-win winner-screen mercedes-theme">
 
     <div class="image-container">
         <img src="KimiWin.png" class="race-image">
@@ -150,15 +202,21 @@
 
     <h1>Kimi Antonelli Wins 🇮🇹 🏆</h1>
 
+    <p class="result-text"></p>
+
 </div>
 
-<div class="user-win">
+<!-- player -->
+
+<div class="user-win winner-screen champion-theme">
 
     <div class="image-container">
         <img src="YouWin.png" class="race-image">
     </div>
 
     <h1>You Win 🏆</h1>
+
+    <p class="result-text"></p>
 
 </div>
 
